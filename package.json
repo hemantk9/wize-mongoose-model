@@ -1,0 +1,17 @@
+{
+  "name": "wize-mongoose-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jsindex.js",
+  "typings": "js/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.5.9",
+    "wize-mongoose-schema": "git+https://github.com/hemantpopli/wize-mongoose-schema.git"
+  }
+}

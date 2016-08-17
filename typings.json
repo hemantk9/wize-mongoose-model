@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mongoose": "registry:npm/mongoose#4.3.5+20160628072220",
+    "wize-schema": "github:hemantpopli/wize-schema/index.d.ts"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160815222444"
+  }
+}
