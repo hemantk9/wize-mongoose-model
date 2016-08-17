@@ -2,7 +2,7 @@ import { Connection } from "mongoose";
 import { WizeSchema } from "wize-schema";
 import { createSchema, createHistorySchema } from "wize-mongoose-schema";
 
-class WizeMongooseModel {
+export class WizeMongooseModel {
     public model: any;
     public historyModel: any;
     constructor(public metadata: WizeSchema, connection: Connection) {

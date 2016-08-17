@@ -9,4 +9,5 @@ class WizeMongooseModel {
         }
     }
 }
+exports.WizeMongooseModel = WizeMongooseModel;
 //# sourceMappingURL=index.js.map
