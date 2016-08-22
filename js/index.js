@@ -8,6 +8,7 @@ class WizeMongooseModel {
             this.historyModel = connection.model(`history_${this.metadata.name}`, wize_mongoose_schema_1.createHistorySchema(this.metadata.name));
         }
     }
+    ;
 }
 exports.WizeMongooseModel = WizeMongooseModel;
 //# sourceMappingURL=index.js.map
