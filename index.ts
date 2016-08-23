@@ -1,6 +1,6 @@
 import { Connection, Model, Document } from "mongoose";
 import { WizeSchema } from "wize-schema";
-import { createSchema, createHistorySchema } from "wize-mongoose-schema";
+import { createSchema, createHistorySchema, createCertificationSchema } from "wize-mongoose-schema";
 
 export class WizeMongooseModel {
     model: Model<Document>;
@@ -13,7 +13,7 @@ export class WizeMongooseModel {
             this.historyModel = connection.model(`history_${this.metadata.name}`, createHistorySchema(this.metadata.name));
         }
         if(this.metadata.certification) {
-            this.certificationModel = connection.model(`certification_${this.metadata.name}`, createHistorySchema(this.metadata.name));
+            this.certificationModel = connection.model(`certification_${this.metadata.name}`, createCertificationSchema(this.metadata.name));
         }
         WizeMongooseModel.models.push(this);
     }

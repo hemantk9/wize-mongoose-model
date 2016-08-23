@@ -8,7 +8,7 @@ class WizeMongooseModel {
             this.historyModel = connection.model(`history_${this.metadata.name}`, wize_mongoose_schema_1.createHistorySchema(this.metadata.name));
         }
         if (this.metadata.certification) {
-            this.certificationModel = connection.model(`certification_${this.metadata.name}`, wize_mongoose_schema_1.createHistorySchema(this.metadata.name));
+            this.certificationModel = connection.model(`certification_${this.metadata.name}`, wize_mongoose_schema_1.createCertificationSchema(this.metadata.name));
         }
         WizeMongooseModel.models.push(this);
     }
