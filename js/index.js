@@ -10,7 +10,12 @@ class WizeMongooseModel {
         if (this.metadata.certification) {
             this.certificationModel = connection.model(`certification_${this.metadata.name}`, wize_mongoose_schema_1.createHistorySchema(this.metadata.name));
         }
+        WizeMongooseModel.models.push(this);
+    }
+    get models() {
+        return WizeMongooseModel.models;
     }
 }
+WizeMongooseModel.models = [];
 exports.WizeMongooseModel = WizeMongooseModel;
 //# sourceMappingURL=index.js.map
