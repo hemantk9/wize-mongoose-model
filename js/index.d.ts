@@ -4,5 +4,6 @@ export declare class WizeMongooseModel {
     metadata: WizeSchema;
     model: Model<Document>;
     historyModel: Model<Document>;
+    certificationModel: Model<Document>;
     constructor(metadata: WizeSchema, connection: Connection);
 }
